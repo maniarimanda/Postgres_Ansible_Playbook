@@ -5,7 +5,7 @@
 
 - name: Uninstall libicu
   yum:
-    name: https://rpmfind.net/linux/centos/7.6.1810/os/x86_64/Packages/libicu-50.1.2-17.el7.x86_64.rpm
+    name: https://rpmfind.net/linux/centos/7.7.1908/os/x86_64/Packages/libicu-50.2-3.el7.x86_64.rpm
     state: absent
 
 - name: Uninstall postgres
