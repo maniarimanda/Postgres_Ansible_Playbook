@@ -4,3 +4,4 @@
 [servers:vars]
 ansible_user=manikanta
 ansible_password=544
+ansible_sudo_password=544
