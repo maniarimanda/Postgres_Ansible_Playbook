@@ -1,5 +1,5 @@
 [servers]
-127.0.0.1
+192.168.222.137
 
 [servers:vars]
 ansible_user=manikanta
