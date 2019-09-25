@@ -2,6 +2,6 @@
 192.168.189.171
 
 [servers:vars]
-ansible_user=manikanta
-ansible_password=544
-ansible_sudo_password=544
+ansible_user=vertex
+ansible_password=vertex
+ansible_sudo_password=vertex
