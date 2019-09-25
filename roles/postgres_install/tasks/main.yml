@@ -1,0 +1,28 @@
+- name: Add postgres repository
+  yum:
+    name: https://download.postgresql.org/pub/repos/yum/reporpms/EL-7-x86_64/pgdg-redhat-repo-latest.noarch.rpm
+    state: present
+
+- name: Install libicu
+  yum:
+    name: https://rpmfind.net/linux/centos/7.6.1810/os/x86_64/Packages/libicu-50.1.2-17.el7.x86_64.rpm
+    state: present
+
+- name: Install postgres
+  yum:
+    name: postgresql11-server
+    state: present
+
+- name: Initialize db
+  shell: /usr/pgsql-11/bin/postgresql-11-setup initdb
+  ignore_errors: True
+
+- name: Install pip
+  yum:
+    name: python-pip
+
+- name: Start postgres service
+  service:
+    name: postgresql-11
+    state: restarted
+    enabled: yes
