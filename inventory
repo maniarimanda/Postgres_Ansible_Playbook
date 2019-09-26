@@ -1,5 +1,5 @@
 [servers]
-192.168.189.171
+192.168.189.176
 
 [servers:vars]
 ansible_user=root
